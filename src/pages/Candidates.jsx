@@ -24,12 +24,12 @@ function Candidates() {
           <h2>Candidatos</h2>
           <p className="text-sm text-slate-600">Listado de candidatos</p>
         </div>
-        <button
-          type="button"
+        <Link
+          to="/dashboard/create-candidate/"
           className="shrink-0 inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold bg-primary hover:bg-primary/90 text-white transition-colors"
         >
           Crear
-        </button>
+        </Link>
       </div>
 
       <div className="rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden">

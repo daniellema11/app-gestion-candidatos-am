@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { redirect } from "../helpers/alerts"
 import { end_points } from "../services/api"
 import { saveLocalStorage } from "../helpers/local-storage"
+import { Link } from "react-router-dom"
 const Login = () => {
   const [getEmail, setEmail] = useState("")
   const [getPassword, setPassword] = useState("")
@@ -84,7 +85,7 @@ const Login = () => {
           <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800 text-center">
             <p class="text-sm text-slate-600 dark:text-slate-400">
               Don't have an account?
-              <a class="text-primary font-bold hover:underline" href="#">Register now</a>
+              <Link class="text-primary font-bold hover:underline" to="/register">Register now</Link>
             </p>
           </div>
         </div>
